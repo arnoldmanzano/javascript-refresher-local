@@ -1,22 +1,36 @@
 var selectElementsStartingWithA = function(array) {
-  return 'Write your method here';
-}
 
-var selectElementsStartingWithA = function(array) {
-  return 'Write your method here';
-}
+  function checkStartWithA(string) {
+    return string[0] === 'a';
+  }
+
+  return array.filter(checkStartWithA);
+};
 
 var selectElementsStartingWithVowel = function(array) {
-  return 'Write your method here';
-}
+
+  function checkStartWithVowel(string) {
+    return (/^[aeiou]/).test(string);
+  }
+
+  return array.filter(checkStartWithVowel);
+};
 
 var removeNullElements = function(array) {
-  return 'Write your method here';
-}
+  function checkNotNull(item) {
+    return item !== null;
+  }
+
+  return array.filter(checkNotNull);
+};
 
 var removeNullAndFalseElements = function(array) {
-  return 'Write your method here';
-}
+  function checkNotNullAndFalse(item) {
+    return item !== null && item !== false;
+  }
+
+  return array.filter(checkNotNullAndFalse);
+};
 
 var reverseWordsInArray = function(array) {
   return 'Write your method here';
